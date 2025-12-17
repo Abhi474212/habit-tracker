@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Abhi474212.github.io/habit-tracker",
   "name": "habit-tracker",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",
